@@ -6,10 +6,10 @@ const { Pool } = pkg;
 
 const app = express();
 
-const main = fs.readFileSync('index.html', 'utf8');
+const main = fs.readFileSync('src/index.html', 'utf8');
 app.get('/', (req, res) => res.type('html').send(main));
 
-app.use(express.static('public'));
+app.use(express.static('src'));
 app.use(express.json());
 
 const port = process.env.PORT || 3000;
