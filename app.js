@@ -6,7 +6,7 @@ const { Pool } = pkg;
 
 const app = express();
 
-const index = fs.readFileSync('public/index.html', 'utf8');
+const index = fs.readFileSync('index.html', 'utf8');
 const routes = ['', '/', '/feed', '/profile', '/settings', '/login', '/settings/profile-settings', '/settings/change-password', '/settings/change-email'];
 
 routes.forEach((route) => {
