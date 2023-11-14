@@ -6,12 +6,8 @@ const { Pool } = pkg;
 
 const app = express();
 
-const index = fs.readFileSync('index.html', 'utf8');
-const routes = ['', '/', '/feed', '/profile', '/settings', '/login', '/settings/profile-settings', '/settings/change-password', '/settings/change-email'];
-
-routes.forEach((route) => {
-  app.get(`/app${route}`, (req, res) => res.type('html').send(index));
-});
+const main = fs.readFileSync('index.html', 'utf8');
+app.get('/', (req, res) => res.type('html').send(main));
 
 app.use(express.static('public'));
 app.use(express.json());
