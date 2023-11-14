@@ -6,7 +6,7 @@ const { Pool } = pkg;
 
 const app = express();
 
-const main = fs.readFileSync('pulic/index.html', 'utf8');
+const main = fs.readFileSync('public/index.html', 'utf8');
 app.get('/', (req, res) => res.type('html').send(main));
 
 app.use(express.static('public'));
