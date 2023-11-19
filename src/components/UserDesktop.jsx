@@ -3,7 +3,7 @@ import { Trends } from "./Trends.jsx";
 import { WhoToFollow } from "./WhoToFollow.jsx";
 import "../index.css";
 
-export const UserDesktop = () => {
+function UserDesktop () {
   return (
     <div className="user-desktop">
       <div className="div-2">
@@ -172,3 +172,5 @@ export const UserDesktop = () => {
     </div>
   );
 };
+
+export default UserDesktop;

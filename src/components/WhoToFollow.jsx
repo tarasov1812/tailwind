@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css";
 
-export const WhoToFollow = () => {
+function WhoToFollow () {
   return (
     <div className="who-to-follow">
       <div className="overlap">
@@ -54,3 +54,5 @@ export const WhoToFollow = () => {
     </div>
   );
 };
+
+export default WhoToFollow;

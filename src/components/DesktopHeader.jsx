@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css";
 
-export const DesktopHeader = () => {
+function DesktopHeader () {
   return (
     <div className="desktop-header">
       <div className="top-menu">
@@ -36,3 +36,5 @@ export const DesktopHeader = () => {
     </div>
   );
 };
+
+export default DesktopHeader;
