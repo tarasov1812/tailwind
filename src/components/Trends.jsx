@@ -1,5 +1,5 @@
 import React from "react";
-import "../index.css";
+import "../style.css";
 
 export const Trends = () => {
   return (
@@ -52,3 +52,5 @@ export const Trends = () => {
     </div>
   );
 };
+
+export default Trends;

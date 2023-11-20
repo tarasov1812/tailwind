@@ -22,8 +22,8 @@ function App() {
       <Steps activeStep={activeStep} />
       <div />
       <Pagination activeStep={activeStep} onStepChange={handleStepChange} />
-      {/* <DesktopHeader />
-      <UserDesktop /> */}
+      <DesktopHeader />
+      <UserDesktop />
     </>
   );
 }

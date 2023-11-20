@@ -1,7 +1,7 @@
 import React from "react";
-import { Trends } from "./Trends.jsx";
-import { WhoToFollow } from "./WhoToFollow.jsx";
-import "../index.css";
+import Trends from "./Trends";
+import WhoToFollow from "./WhoToFollow";
+import "../style.css";
 
 function UserDesktop () {
   return (
